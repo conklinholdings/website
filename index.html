@@ -1,30 +1,127 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Conklin Holdings LLC</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Conklin Holdings LLC</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png">
+
   <style>
     body {
-      font-family: Arial, sans-serif;
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+
+    header {
       text-align: center;
-      padding: 50px;
-      background: #f7f7f7;
-      color: #222;
+      padding: 80px 20px 40px;
     }
+
+    header img {
+      max-width: 120px;
+      margin-bottom: 20px;
+    }
+
     h1 {
-      font-size: 32px;
+      font-size: 40px;
+      margin: 0;
+      letter-spacing: 1px;
     }
-    p {
+
+    .tagline {
+      color: #94a3b8;
+      margin-top: 10px;
       font-size: 18px;
-      color: #555;
+    }
+
+    section {
+      max-width: 800px;
+      margin: auto;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .card {
+      background: #1e293b;
+      border-radius: 12px;
+      padding: 30px;
+      margin-top: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-top: 10px;
+      border-radius: 8px;
+      border: none;
+      font-size: 14px;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      background: #3b82f6;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #2563eb;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #64748b;
+      font-size: 14px;
     }
   </style>
 </head>
+
 <body>
+
+<header>
+  <img src="logo.png" alt="Conklin Holdings Logo">
   <h1>Conklin Holdings LLC</h1>
-  <p>Acquisitions | Investments | Small Business Ownership</p>
-  <p>Phoenix, Arizona</p>
-  <p>Contact: yourname@conklinholdco.com</p>
+  <div class="tagline">Acquisitions • Investments • Small Business Ownership</div>
+</header>
+
+<section>
+  <div class="card">
+    <h2>About</h2>
+    <p>
+      Conklin Holdings LLC acquires and operates small businesses in the Phoenix area,
+      focusing on stable, cash-flowing operations with long-term growth potential.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Contact</h2>
+
+    <form action="https://formspree.io/f/xbdqlwpo" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+
+    <p style="margin-top:20px;">or email directly:</p>
+    <p><strong>justin@conklinholdings.com</strong></p>
+  </div>
+</section>
+
+<footer>
+  © 2026 Conklin Holdings LLC
+</footer>
+
 </body>
 </html>

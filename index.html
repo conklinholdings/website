@@ -2,126 +2,94 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Conklin Holdings LLC</title>
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png">
-
-  <style>
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial;
-      background: #0f172a;
-      color: #e2e8f0;
-    }
-
-    header {
-      text-align: center;
-      padding: 80px 20px 40px;
-    }
-
-    header img {
-      max-width: 250px;
-      margin-bottom: 30px;
-    }
-
-    h1 {
-      font-size: 40px;
-      margin: 0;
-      letter-spacing: 1px;
-    }
-
-    .tagline {
-      color: #94a3b8;
-      margin-top: 10px;
-      font-size: 18px;
-    }
-
-    section {
-      max-width: 800px;
-      margin: auto;
-      padding: 40px 20px;
-      text-align: center;
-    }
-
-    .card {
-      background: #1e293b;
-      border-radius: 12px;
-      padding: 30px;
-      margin-top: 20px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-    }
-
-    input, textarea {
-      width: 100%;
-      padding: 12px;
-      margin-top: 10px;
-      border-radius: 8px;
-      border: none;
-      font-size: 14px;
-    }
-
-    button {
-      margin-top: 15px;
-      padding: 12px 20px;
-      border: none;
-      border-radius: 8px;
-      background: #3b82f6;
-      color: white;
-      font-size: 16px;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background: #2563eb;
-    }
-
-    footer {
-      text-align: center;
-      padding: 30px;
-      color: #64748b;
-      font-size: 14px;
-    }
-  </style>
+  <link rel="icon" href="/favicon.png">
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
+<body class="bg-slate-900 text-white scroll-smooth">
 
-<body>
+  <!-- Background Glow -->
+  <div class="fixed inset-0 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.06),transparent_60%)] pointer-events-none"></div>
 
-<header>
-  <img src="logo.png" alt="Conklin Holdings Logo">
-  <h1>Conklin Holdings LLC</h1>
-  <div class="tagline">Acquisitions • Investments • Small Business Ownership</div>
-</header>
+  <!-- Hero -->
+  <section class="relative flex flex-col items-center justify-center text-center py-32 px-6">
+    <img src="logo-white.png" class="w-80 mb-6" alt="Conklin Holdings Logo">
 
-<section>
-  <div class="card">
-    <h2>About</h2>
-    <p>
-      Conklin Holdings LLC acquires and operates small businesses in the Phoenix area,
-      focusing on stable, cash-flowing operations with long-term growth potential.
+    <p class="text-lg text-slate-300 max-w-xl mb-8">
+      Acquiring, scaling, and systemizing cash-flowing businesses for long-term value.
     </p>
-  </div>
 
-  <div class="card">
-    <h2>Contact</h2>
+    <a href="#contact" class="bg-white text-slate-900 px-6 py-3 rounded-xl font-semibold hover:bg-slate-200 transition">
+      Contact
+    </a>
+  </section>
 
-    <form action="https://formspree.io/f/xbdqlwpo" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+  <!-- About -->
+  <section class="py-20 px-6 max-w-5xl mx-auto">
+    <h2 class="text-3xl font-semibold mb-6">About</h2>
+    <p class="text-slate-300 leading-relaxed">
+      Conklin Holdings LLC is a privately held company focused on acquiring
+      and operating small to mid-sized cash-flowing businesses. The strategy
+      is straightforward: buy solid assets, improve operations, implement
+      systems, and drive consistent profit over time.
+    </p>
+    <p class="text-slate-300 mt-4">
+      Actively seeking acquisition opportunities across service, retail,
+      light manufacturing, and other cash-flowing sectors.
+    </p>
+  </section>
 
-      <button type="submit">Send Message</button>
+  <!-- Focus Areas -->
+  <section class="py-20 px-6">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-6">
+
+      <div class="bg-slate-800 p-6 rounded-2xl hover:-translate-y-1 transition">
+        <h3 class="text-xl font-semibold mb-2">Acquisition</h3>
+        <p class="text-slate-400">
+          Sourcing and closing on practical, cash-flowing businesses with
+          strong fundamentals and room to improve.
+        </p>
+      </div>
+
+      <div class="bg-slate-800 p-6 rounded-2xl hover:-translate-y-1 transition">
+        <h3 class="text-xl font-semibold mb-2">Optimization</h3>
+        <p class="text-slate-400">
+          Improving margins through operational discipline, cost control,
+          and process refinement.
+        </p>
+      </div>
+
+      <div class="bg-slate-800 p-6 rounded-2xl hover:-translate-y-1 transition">
+        <h3 class="text-xl font-semibold mb-2">Systems & Scale</h3>
+        <p class="text-slate-400">
+          Implementing repeatable systems to scale performance and create
+          durable, long-term cash flow.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-20 px-6 max-w-3xl mx-auto">
+    <h2 class="text-3xl font-semibold mb-6 text-center">Contact</h2>
+
+    <form action="https://formspree.io/f/xbdqlwpo" method="POST" class="space-y-4">
+      <input name="name" placeholder="Name" required class="w-full p-3 rounded-lg bg-slate-800 border border-slate-700">
+      <input name="email" type="email" placeholder="Email" required class="w-full p-3 rounded-lg bg-slate-800 border border-slate-700">
+      <textarea name="message" placeholder="Message" required class="w-full p-3 rounded-lg bg-slate-800 border border-slate-700"></textarea>
+
+      <button type="submit" class="w-full bg-white text-slate-900 py-3 rounded-xl font-semibold hover:bg-slate-200 transition">
+        Send Message
+      </button>
     </form>
+  </section>
 
-    <p style="margin-top:20px;">or email directly:</p>
-    <p><strong>justin@conklinholdings.com</strong></p>
-  </div>
-</section>
-
-<footer>
-  © 2026 Conklin Holdings LLC
-</footer>
+  <!-- Footer -->
+  <footer class="text-center py-6 text-slate-500 text-sm">
+    © 2026 Conklin Holdings LLC. All rights reserved.
+  </footer>
 
 </body>
 </html>
